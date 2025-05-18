@@ -9,10 +9,10 @@ This project models a simplified **Distributed Automotive Cyber-Physical System 
 - **Normal traffic (70%)** vs. **malicious traffic (30%)**, e.g., spoofed or rapid-fire DoS-style messages.
 - An **Intrusion Detection System (IDS)** that listens to the CAN bus and flags anomalies based on **unexpected timing intervals**.
 - A structured log record system that:
--- Records each message in a text file based on its source ECU name.
--- Separates logs for known vs. unknown devices.
--- Creates a logs/ folder containing a .txt file per ECU (e.g., Brake_ECU.txt, Unknown_Device.txt).
--- Timestamps and formats each entry for future analysis.
+- 	Records each message in a text file based on its source ECU name.
+- 	Separates logs for known vs. unknown devices.
+- 	Creates a logs/ folder containing a .txt file per ECU (e.g., Brake_ECU.txt, Unknown_Device.txt).
+- 	Timestamps and formats each entry for future analysis.
 
 
 ###Key Features
@@ -40,18 +40,18 @@ python3 threaded_can_sim.py
 ```
 
 This will:
--Start one thread simulating CAN messages
--Start a second thread monitoring them in real time
--Print both sender and receiver activity side by side
+- Start one thread simulating CAN messages
+- Start a second thread monitoring them in real time
+- Print both sender and receiver activity side by side
 
 ```bash
 python3 threaded_sim_logger.py
 ```
 
 This will :
--Start one thread simulating CAN messages
--Start a seconod thread capture and filterign each ECU to each individual files
--A generall log coexist aside those individual one.
+- Start one thread simulating CAN messages
+- Start a seconod thread capture and filterign each ECU to each individual files
+- A generall log coexist aside those individual one.
 ---
 
 ## Education purpose
