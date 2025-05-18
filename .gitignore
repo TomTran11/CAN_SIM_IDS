@@ -1,2 +1,10 @@
-log/*
+# Ignore the entire logs directory
+logs/
+
+# Ignore specific log file (legacy/flat logging)
 security.log
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
